@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MaintabbarController.h"
+#import "BaseNavigationController.h"
+#import "VC1.h"
 
 
 @interface AppDelegate ()
@@ -22,6 +24,12 @@
     
     MaintabbarController *maintabbar = [MaintabbarController new];
     self.window.rootViewController = maintabbar;
+    
+//    VC1 * vc1 = [VC1 new];
+//    BaseNavigationController * base = [[BaseNavigationController alloc]initWithRootViewController:vc1];
+//    self.window.rootViewController = base;
+    
+    
     
     return YES;
 }

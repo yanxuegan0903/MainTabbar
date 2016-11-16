@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A74C17981DDBFDF900A3B899 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C17971DDBFDF900A3B899 /* main.m */; };
 		A74C179B1DDBFDF900A3B899 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C179A1DDBFDF900A3B899 /* AppDelegate.m */; };
-		A74C17A11DDBFDF900A3B899 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74C179F1DDBFDF900A3B899 /* Main.storyboard */; };
 		A74C17A31DDBFDF900A3B899 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A74C17A21DDBFDF900A3B899 /* Assets.xcassets */; };
 		A74C17A61DDBFDF900A3B899 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A74C17A41DDBFDF900A3B899 /* LaunchScreen.storyboard */; };
 		A74C17B11DDBFDF900A3B899 /* ____NavigationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C17B01DDBFDF900A3B899 /* ____NavigationTests.m */; };
@@ -56,7 +55,6 @@
 		A74C17971DDBFDF900A3B899 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A74C17991DDBFDF900A3B899 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A74C179A1DDBFDF900A3B899 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A74C17A01DDBFDF900A3B899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A74C17A21DDBFDF900A3B899 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A74C17A51DDBFDF900A3B899 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A74C17A71DDBFDF900A3B899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -173,7 +171,6 @@
 				A74C17D91DDC286800A3B899 /* ActionBar.m */,
 				A74C17DB1DDC28DB00A3B899 /* AppUtils.h */,
 				A74C17DC1DDC28DB00A3B899 /* AppUtils.m */,
-				A74C179F1DDBFDF900A3B899 /* Main.storyboard */,
 				A74C17A21DDBFDF900A3B899 /* Assets.xcassets */,
 				A74C17A41DDBFDF900A3B899 /* LaunchScreen.storyboard */,
 				A74C17A71DDBFDF900A3B899 /* Info.plist */,
@@ -354,7 +351,6 @@
 				A74C17F91DDC2A1A00A3B899 /* Info.plist in Resources */,
 				A74C17A61DDBFDF900A3B899 /* LaunchScreen.storyboard in Resources */,
 				A74C17A31DDBFDF900A3B899 /* Assets.xcassets in Resources */,
-				A74C17A11DDBFDF900A3B899 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,14 +429,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A74C179F1DDBFDF900A3B899 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A74C17A01DDBFDF900A3B899 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A74C17A41DDBFDF900A3B899 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -553,7 +541,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cjl.----Navigation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -568,7 +556,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cjl.----Navigation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

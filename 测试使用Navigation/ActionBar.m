@@ -100,12 +100,14 @@
     // Drawing code
     if (!self.isGradientLine)
     {
-        CGContextRef context = UIGraphicsGetCurrentContext();
-        CGContextSetLineWidth(context, 0.5);
-        CGContextSetStrokeColorWithColor(context, [UIColor grayColor].CGColor);
-        CGContextMoveToPoint(context, 0, 0);
-        CGContextAddLineToPoint(context, rect.size.width,0);
-        CGContextStrokePath(context);
+//        NSLog(@"121212121");
+//        CGContextRef context = UIGraphicsGetCurrentContext();
+//        CGContextSetLineWidth(context, 0.5);
+//        CGContextSetStrokeColorWithColor(context, [UIColor grayColor].CGColor);
+//        CGContextMoveToPoint(context, 0, 0);
+//        NSLog(@"rect = %@",NSStringFromCGRect(rect));
+//        CGContextAddLineToPoint(context, rect.size.width,0);
+//        CGContextStrokePath(context);
     }
 }
 
