@@ -41,7 +41,6 @@
     self.tabBar.backgroundColor = [UIColor clearColor];
     
     
-    
     ActionBar * bottomBar = [[ActionBar alloc]initWithFrame:CGRectMake(0, 0, self.tabBar.bounds.size.width, self.tabBar.bounds.size.height)];
     bottomBar.backgroundColor = [UIColor whiteColor];
     bottomBar.userInteractionEnabled = YES;
@@ -162,7 +161,6 @@
 {
     return _supportOrientation;
 }
-
 
 
 - (void)didReceiveMemoryWarning {

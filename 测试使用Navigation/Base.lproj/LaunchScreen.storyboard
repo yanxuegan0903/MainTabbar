@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +20,18 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1536-x2048 3" translatesAutoresizingMaskIntoConstraints="NO" id="s4H-Ne-z30">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="s4H-Ne-z30" secondAttribute="bottom" id="KB7-e9-GuG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="s4H-Ne-z30" secondAttribute="trailing" id="ngk-pS-9Z9"/>
+                            <constraint firstItem="s4H-Ne-z30" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="q7H-gt-3pP"/>
+                            <constraint firstItem="s4H-Ne-z30" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="waF-ip-Q92"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -27,4 +39,7 @@
             <point key="canvasLocation" x="-7" y="175"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1536-x2048 3" width="1536" height="2048"/>
+    </resources>
 </document>

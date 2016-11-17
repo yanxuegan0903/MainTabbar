@@ -31,6 +31,8 @@
 		A74C18011DDC2A1A00A3B899 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C17F31DDC2A1A00A3B899 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		A74C18021DDC2A1A00A3B899 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C17F51DDC2A1A00A3B899 /* View+MASAdditions.m */; };
 		A74C18031DDC2A1A00A3B899 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C17F81DDC2A1A00A3B899 /* ViewController+MASAdditions.m */; };
+		A74C180C1DDC663800A3B899 /* PushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C180B1DDC663800A3B899 /* PushVC.m */; };
+		A74C180F1DDD420600A3B899 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C180E1DDD420600A3B899 /* Device.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +106,10 @@
 		A74C17F61DDC2A1A00A3B899 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		A74C17F71DDC2A1A00A3B899 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		A74C17F81DDC2A1A00A3B899 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		A74C180A1DDC663800A3B899 /* PushVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushVC.h; sourceTree = "<group>"; };
+		A74C180B1DDC663800A3B899 /* PushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushVC.m; sourceTree = "<group>"; };
+		A74C180D1DDD420600A3B899 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		A74C180E1DDD420600A3B899 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,12 +167,16 @@
 				A74C17CA1DDBFEDF00A3B899 /* BaseNavigationController.m */,
 				A74C17CC1DDC00CC00A3B899 /* MaintabbarController.h */,
 				A74C17CD1DDC00CC00A3B899 /* MaintabbarController.m */,
+				A74C180D1DDD420600A3B899 /* Device.h */,
+				A74C180E1DDD420600A3B899 /* Device.m */,
 				A74C17CF1DDC013900A3B899 /* VC1.h */,
 				A74C17D01DDC013900A3B899 /* VC1.m */,
 				A74C17D21DDC014300A3B899 /* VC2.h */,
 				A74C17D31DDC014300A3B899 /* VC2.m */,
 				A74C17D51DDC014D00A3B899 /* VC3.h */,
 				A74C17D61DDC014D00A3B899 /* VC3.m */,
+				A74C180A1DDC663800A3B899 /* PushVC.h */,
+				A74C180B1DDC663800A3B899 /* PushVC.m */,
 				A74C17D81DDC286800A3B899 /* ActionBar.h */,
 				A74C17D91DDC286800A3B899 /* ActionBar.m */,
 				A74C17DB1DDC28DB00A3B899 /* AppUtils.h */,
@@ -383,9 +393,11 @@
 				A74C17981DDBFDF900A3B899 /* main.m in Sources */,
 				A74C17FA1DDC2A1A00A3B899 /* MASCompositeConstraint.m in Sources */,
 				A74C17FC1DDC2A1A00A3B899 /* MASConstraintMaker.m in Sources */,
+				A74C180C1DDC663800A3B899 /* PushVC.m in Sources */,
 				A74C18021DDC2A1A00A3B899 /* View+MASAdditions.m in Sources */,
 				A74C17FD1DDC2A1A00A3B899 /* MASLayoutConstraint.m in Sources */,
 				A74C18031DDC2A1A00A3B899 /* ViewController+MASAdditions.m in Sources */,
+				A74C180F1DDD420600A3B899 /* Device.m in Sources */,
 				A74C17FB1DDC2A1A00A3B899 /* MASConstraint.m in Sources */,
 				A74C17DD1DDC28DB00A3B899 /* AppUtils.m in Sources */,
 				A74C17D11DDC013900A3B899 /* VC1.m in Sources */,
