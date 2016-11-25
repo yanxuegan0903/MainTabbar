@@ -92,6 +92,7 @@
 -(void)clickBtn:(UIButton *)sender
 {
     PushVC * vc = [PushVC new];
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

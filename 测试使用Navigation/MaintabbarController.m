@@ -14,9 +14,19 @@
 #import "ActionBar.h"
 #import "Masonry.h"
 
-@interface MaintabbarController ()
+#import "TransitionAnimation.h"
+#import "TransitionController.h"
+
+
+
+
+@interface MaintabbarController ()<UITabBarControllerDelegate>
 
 @property (nonatomic, strong) ActionBar *actionBar;
+
+@property(nonatomic, strong)UIPanGestureRecognizer *panGestureRecognizer;
+
+
 
 @end
 
@@ -60,6 +70,10 @@
     
     [self setSelectedIndex:0];
     
+    
+    
+    self.delegate = self;
+    [self.view addGestureRecognizer:self.panGestureRecognizer];
 }
 
 -(UIView *)createBarItem:(NSString *)image selectedImage:(NSString *)selectedImage title:(NSString *)title
@@ -161,6 +175,75 @@
 {
     return _supportOrientation;
 }
+
+
+
+#pragma mark -- Pan手势相关
+- (UIPanGestureRecognizer *)panGestureRecognizer{
+    if (_panGestureRecognizer == nil){
+        _panGestureRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panGestureRecognizer:)];
+    }
+    return _panGestureRecognizer;
+}
+
+- (void)panGestureRecognizer:(UIPanGestureRecognizer *)pan{
+    if (self.transitionCoordinator) {
+        return;
+    }
+    
+    if (pan.state == UIGestureRecognizerStateBegan || pan.state == UIGestureRecognizerStateChanged){
+        [self beginInteractiveTransitionIfPossible:pan];
+    }
+}
+
+- (void)beginInteractiveTransitionIfPossible:(UIPanGestureRecognizer *)sender{
+    CGPoint translation = [sender translationInView:self.view];
+    if (translation.x > 0.f && self.selectedIndex > 0) {
+        self.selectedIndex --;
+    }
+    else if (translation.x < 0.f && self.selectedIndex + 1 < self.viewControllers.count) {
+        self.selectedIndex ++;
+    }
+    else {
+        if (!CGPointEqualToPoint(translation, CGPointZero)) {
+            sender.enabled = NO;
+            sender.enabled = YES;
+        }
+    }
+    
+    [self.transitionCoordinator animateAlongsideTransitionInView:self.view animation:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        
+    } completion:^(id<UIViewControllerTransitionCoordinatorContext>  _Nonnull context) {
+        if ([context isCancelled] && sender.state == UIGestureRecognizerStateChanged){
+            [self beginInteractiveTransitionIfPossible:sender];
+        }
+    }];
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController animationControllerForTransitionFromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
+    if (self.panGestureRecognizer.state == UIGestureRecognizerStateBegan || self.panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        NSArray *viewControllers = tabBarController.viewControllers;
+        if ([viewControllers indexOfObject:toVC] > [viewControllers indexOfObject:fromVC]) {
+            return [[TransitionAnimation alloc] initWithTargetEdge:UIRectEdgeLeft];
+        }
+        else {
+            return [[TransitionAnimation alloc] initWithTargetEdge:UIRectEdgeRight];
+        }
+    }
+    else{
+        return nil;
+    }
+}
+
+- (id<UIViewControllerInteractiveTransitioning>)tabBarController:(UITabBarController *)tabBarController interactionControllerForAnimationController:(id<UIViewControllerAnimatedTransitioning>)animationController{
+    if (self.panGestureRecognizer.state == UIGestureRecognizerStateBegan || self.panGestureRecognizer.state == UIGestureRecognizerStateChanged) {
+        return [[TransitionController alloc] initWithGestureRecognizer:self.panGestureRecognizer];
+    }
+    else {
+        return nil;
+    }
+}
+
 
 
 - (void)didReceiveMemoryWarning {

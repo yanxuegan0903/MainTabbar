@@ -33,6 +33,8 @@
 		A74C18031DDC2A1A00A3B899 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C17F81DDC2A1A00A3B899 /* ViewController+MASAdditions.m */; };
 		A74C180C1DDC663800A3B899 /* PushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C180B1DDC663800A3B899 /* PushVC.m */; };
 		A74C180F1DDD420600A3B899 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = A74C180E1DDD420600A3B899 /* Device.m */; };
+		A7AAC1D91DE818A9009FBCDF /* TransitionAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AAC1D61DE818A9009FBCDF /* TransitionAnimation.m */; };
+		A7AAC1DA1DE818A9009FBCDF /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7AAC1D81DE818A9009FBCDF /* TransitionController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,20 +68,20 @@
 		A74C17B71DDBFDF900A3B899 /* 测试使用NavigationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "测试使用NavigationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A74C17BB1DDBFDF900A3B899 /* ____NavigationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "____NavigationUITests.m"; sourceTree = "<group>"; };
 		A74C17BD1DDBFDF900A3B899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A74C17C91DDBFEDF00A3B899 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
-		A74C17CA1DDBFEDF00A3B899 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		A74C17CC1DDC00CC00A3B899 /* MaintabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MaintabbarController.h; sourceTree = "<group>"; };
-		A74C17CD1DDC00CC00A3B899 /* MaintabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MaintabbarController.m; sourceTree = "<group>"; };
+		A74C17C91DDBFEDF00A3B899 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseNavigationController.h; path = "测试使用Navigation/BaseNavigationController.h"; sourceTree = "<group>"; };
+		A74C17CA1DDBFEDF00A3B899 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseNavigationController.m; path = "测试使用Navigation/BaseNavigationController.m"; sourceTree = "<group>"; };
+		A74C17CC1DDC00CC00A3B899 /* MaintabbarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MaintabbarController.h; path = "测试使用Navigation/MaintabbarController.h"; sourceTree = "<group>"; };
+		A74C17CD1DDC00CC00A3B899 /* MaintabbarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MaintabbarController.m; path = "测试使用Navigation/MaintabbarController.m"; sourceTree = "<group>"; };
 		A74C17CF1DDC013900A3B899 /* VC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC1.h; sourceTree = "<group>"; };
 		A74C17D01DDC013900A3B899 /* VC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC1.m; sourceTree = "<group>"; };
 		A74C17D21DDC014300A3B899 /* VC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC2.h; sourceTree = "<group>"; };
 		A74C17D31DDC014300A3B899 /* VC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC2.m; sourceTree = "<group>"; };
 		A74C17D51DDC014D00A3B899 /* VC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VC3.h; sourceTree = "<group>"; };
 		A74C17D61DDC014D00A3B899 /* VC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VC3.m; sourceTree = "<group>"; };
-		A74C17D81DDC286800A3B899 /* ActionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionBar.h; sourceTree = "<group>"; };
-		A74C17D91DDC286800A3B899 /* ActionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionBar.m; sourceTree = "<group>"; };
-		A74C17DB1DDC28DB00A3B899 /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
-		A74C17DC1DDC28DB00A3B899 /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
+		A74C17D81DDC286800A3B899 /* ActionBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActionBar.h; path = "测试使用Navigation/ActionBar.h"; sourceTree = "<group>"; };
+		A74C17D91DDC286800A3B899 /* ActionBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActionBar.m; path = "测试使用Navigation/ActionBar.m"; sourceTree = "<group>"; };
+		A74C17DB1DDC28DB00A3B899 /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppUtils.h; path = "测试使用Navigation/AppUtils.h"; sourceTree = "<group>"; };
+		A74C17DC1DDC28DB00A3B899 /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppUtils.m; path = "测试使用Navigation/AppUtils.m"; sourceTree = "<group>"; };
 		A74C17DF1DDC2A1900A3B899 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A74C17E01DDC2A1900A3B899 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		A74C17E11DDC2A1900A3B899 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
@@ -110,6 +112,10 @@
 		A74C180B1DDC663800A3B899 /* PushVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushVC.m; sourceTree = "<group>"; };
 		A74C180D1DDD420600A3B899 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
 		A74C180E1DDD420600A3B899 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		A7AAC1D51DE818A9009FBCDF /* TransitionAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimation.h; sourceTree = "<group>"; };
+		A7AAC1D61DE818A9009FBCDF /* TransitionAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimation.m; sourceTree = "<group>"; };
+		A7AAC1D71DE818A9009FBCDF /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
+		A7AAC1D81DE818A9009FBCDF /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,8 @@
 		A74C178A1DDBFDF900A3B899 = {
 			isa = PBXGroup;
 			children = (
+				A7AAC1D41DE818A9009FBCDF /* Animation */,
+				A7AAC1D31DE8184B009FBCDF /* Tabbar */,
 				A74C17DE1DDC2A1900A3B899 /* Masonry */,
 				A74C17951DDBFDF900A3B899 /* 测试使用Navigation */,
 				A74C17AF1DDBFDF900A3B899 /* 测试使用NavigationTests */,
@@ -163,10 +171,6 @@
 			children = (
 				A74C17991DDBFDF900A3B899 /* AppDelegate.h */,
 				A74C179A1DDBFDF900A3B899 /* AppDelegate.m */,
-				A74C17C91DDBFEDF00A3B899 /* BaseNavigationController.h */,
-				A74C17CA1DDBFEDF00A3B899 /* BaseNavigationController.m */,
-				A74C17CC1DDC00CC00A3B899 /* MaintabbarController.h */,
-				A74C17CD1DDC00CC00A3B899 /* MaintabbarController.m */,
 				A74C180D1DDD420600A3B899 /* Device.h */,
 				A74C180E1DDD420600A3B899 /* Device.m */,
 				A74C17CF1DDC013900A3B899 /* VC1.h */,
@@ -177,10 +181,6 @@
 				A74C17D61DDC014D00A3B899 /* VC3.m */,
 				A74C180A1DDC663800A3B899 /* PushVC.h */,
 				A74C180B1DDC663800A3B899 /* PushVC.m */,
-				A74C17D81DDC286800A3B899 /* ActionBar.h */,
-				A74C17D91DDC286800A3B899 /* ActionBar.m */,
-				A74C17DB1DDC28DB00A3B899 /* AppUtils.h */,
-				A74C17DC1DDC28DB00A3B899 /* AppUtils.m */,
 				A74C17A21DDBFDF900A3B899 /* Assets.xcassets */,
 				A74C17A41DDBFDF900A3B899 /* LaunchScreen.storyboard */,
 				A74C17A71DDBFDF900A3B899 /* Info.plist */,
@@ -247,6 +247,33 @@
 			);
 			name = Masonry;
 			path = "测试使用Navigation/Masonry";
+			sourceTree = "<group>";
+		};
+		A7AAC1D31DE8184B009FBCDF /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				A74C17C91DDBFEDF00A3B899 /* BaseNavigationController.h */,
+				A74C17CA1DDBFEDF00A3B899 /* BaseNavigationController.m */,
+				A74C17CC1DDC00CC00A3B899 /* MaintabbarController.h */,
+				A74C17CD1DDC00CC00A3B899 /* MaintabbarController.m */,
+				A74C17D81DDC286800A3B899 /* ActionBar.h */,
+				A74C17D91DDC286800A3B899 /* ActionBar.m */,
+				A74C17DB1DDC28DB00A3B899 /* AppUtils.h */,
+				A74C17DC1DDC28DB00A3B899 /* AppUtils.m */,
+			);
+			name = Tabbar;
+			sourceTree = "<group>";
+		};
+		A7AAC1D41DE818A9009FBCDF /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				A7AAC1D51DE818A9009FBCDF /* TransitionAnimation.h */,
+				A7AAC1D61DE818A9009FBCDF /* TransitionAnimation.m */,
+				A7AAC1D71DE818A9009FBCDF /* TransitionController.h */,
+				A7AAC1D81DE818A9009FBCDF /* TransitionController.m */,
+			);
+			name = Animation;
+			path = "测试使用Navigation/Animation";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,8 +415,10 @@
 				A74C17FF1DDC2A1A00A3B899 /* MASViewConstraint.m in Sources */,
 				A74C179B1DDBFDF900A3B899 /* AppDelegate.m in Sources */,
 				A74C17FE1DDC2A1A00A3B899 /* MASViewAttribute.m in Sources */,
+				A7AAC1D91DE818A9009FBCDF /* TransitionAnimation.m in Sources */,
 				A74C17DA1DDC286800A3B899 /* ActionBar.m in Sources */,
 				A74C17D71DDC014D00A3B899 /* VC3.m in Sources */,
+				A7AAC1DA1DE818A9009FBCDF /* TransitionController.m in Sources */,
 				A74C17981DDBFDF900A3B899 /* main.m in Sources */,
 				A74C17FA1DDC2A1A00A3B899 /* MASCompositeConstraint.m in Sources */,
 				A74C17FC1DDC2A1A00A3B899 /* MASConstraintMaker.m in Sources */,
@@ -549,7 +578,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = U54J3QSAHN;
 				INFOPLIST_FILE = "测试使用Navigation/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cjl.----Navigation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,7 +593,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = U54J3QSAHN;
 				INFOPLIST_FILE = "测试使用Navigation/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cjl.----Navigation";
 				PRODUCT_NAME = "$(TARGET_NAME)";
